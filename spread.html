@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Ecma script Tutorial</title>
+</head>
+
+<body>
+    <h1>Spread Operator </h1>
+    <script>
+        
+       console.warn('normal spread');
+    //    let otherFruits=['pineapple','guvava'];
+       let fruits=['apple','banana','kiwi'];
+    //    function PrintAll(...a) //rest
+    //    {
+    //        console.warn(a)
+    //    }
+    //    PrintAll(...fruits) //spread
+    // let allFruits=[...fruits,...otherFruits];
+    let newFruits=[...fruits]
+    newFruits.push("test")
+    console.warn(newFruits)
+    console.warn("old",fruits)
+    console.warn('in between add an array with existing');
+    let othercars=['baleno','i20'];
+    let cars=['800',...othercars,'alto','swift'];
+    console.warn(cars);
+
+    //    let otherFruits=['pineapple','guvava'];
+    let fruits1=['apple','banana','kiwi'];
+    //    function PrintAll(...a) //rest
+    //    {
+    //        console.warn(a)
+    //    }
+    //    PrintAll(...fruits) //spread
+    // let allFruits=[...fruits,...otherFruits];
+    let newFruits1=[...fruits1]
+    //let newFruits1=[...fruits1]
+    newFruits1.push("test")
+    console.warn(newFruits1)
+    console.warn("old",fruits1)
+    </script>
+</body>
+
+</html>

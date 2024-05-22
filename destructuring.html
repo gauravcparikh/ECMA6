@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Ecma script Tutorial</title>
+</head>
+
+<body>
+    <h1>Destructuring Array</h1>
+    <script>
+        console.warn('skip any values');
+        let cars=['baleno','i20','swift',"nexon"];
+        let [car1,,car3,car4]=cars;
+          console.warn(car1);
+          console.warn(car3);
+           console.warn(car4);
+
+           console.warn('with default value example');
+        let languages=['c#','javascript','java',"python"];
+        let [l1,,l3,l4,l5="unknown language"]=languages;
+           console.warn(l5);
+           console.warn('with rest operator');
+           let fruits=['apple','mango','kiwi',"orange"];
+    //   let [fruit1,,fruit3,fruit4="unknown fruit"]=fruits;
+    //   console.warn(fruit1)
+    //   console.warn(fruit2)
+    //   console.warn(fruit3)
+    //   console.warn(fruit4)
+    let [fruit1, fruit2, ...fruitx]=fruits;
+    console.warn(fruitx)
+
+
+
+    </script>
+</body>
+
+</html>

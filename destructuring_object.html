@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Ecma script Tutorial</title>
+</head>
+
+<body>
+    <h1>Destructuring Object</h1>
+    <script>
+        let user = { name: 'anil sidhu', email: 'anil@test.com', mobile: 9999 }
+        let { name, email } = user
+        console.warn('simple destructuring ');
+         console.warn(name)
+         console.warn(email)
+        
+        console.warn('using full rest operator');
+        let car = { name: 'baleno', variant: 'delta', type: 'hatchback' }
+        let {...type } = car
+         console.warn(type)
+
+         console.warn('skip first element and rest operator');
+        let city = { cityname: 'bangalore', state: 'KA', country: 'india' }
+        let {cityname,...country } = city
+         console.warn(country)
+       // let { mobile, ...email } = user
+        //console.warn(email)
+
+
+    </script>
+</body>
+
+</html>
